@@ -1,0 +1,5 @@
+jbuild-pp - pretty printer for jbuilder files
+
+This package provides a simple pretty printer for jbuilder's jbuild
+files that is intended to be run as a filter from within an editor.
+
