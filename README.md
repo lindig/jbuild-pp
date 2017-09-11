@@ -9,7 +9,7 @@ something that I can tweak and that installs into a simple binary.
 ## Example
 
 ```
-jbuild-pp < jbuild
+$ jbuild-pp jbuild
 
 (jbuild_version 1)
 
@@ -67,11 +67,17 @@ jbuild-pp < jbuild
 opam pin add .
 ```
 
+## Documentation
+
+```sh
+jbuild-pp --help
+```
+
 ## Depencencies
 
 See [jbuild-pp.opam](./jbuild-pp.opam).
 
 [jbuilder]: https://github.com/janestreet/jbuilder
-[OCaml]:		http://www.ocaml.org/
+[OCaml]:    http://www.ocaml.org/
 
 
