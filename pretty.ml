@@ -23,7 +23,7 @@ let rec pp fmt = function
   | `List (`Atom _ :: `List _ :: _ as l) ->
     Format.fprintf fmt "@[<v2>(";
     pp' fmt l;
-    Format.fprintf fmt ")@]"
+    Format.fprintf fmt "@]@,)"
   | `List ((`List _ :: _ :: _) as l) ->
     Format.fprintf fmt "@[<v2>(";
     pp' fmt l;
