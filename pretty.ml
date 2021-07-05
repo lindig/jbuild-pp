@@ -21,15 +21,15 @@ let rec pp fmt = function
   | `List [x] -> Format.fprintf fmt "@[<hov2>(%a)@]" pp x
   | `List (`Atom ("libraries") :: _ as l)
   | `List (`Atom _ :: `List _ :: _ as l) ->
-    Format.fprintf fmt "@[<v1>(";
+    Format.fprintf fmt "@[<v2>(";
     pp' fmt l;
     Format.fprintf fmt ")@]"
   | `List ((`List _ :: _ :: _) as l) ->
-    Format.fprintf fmt "@[<v1>(";
+    Format.fprintf fmt "@[<v2>(";
     pp' fmt l;
     Format.fprintf fmt ")@]"
   | `List l ->
-    Format.fprintf fmt "@[<hov1>(";
+    Format.fprintf fmt "@[<hov2>(";
     pp' fmt l;
     Format.fprintf fmt ")@]"
 
