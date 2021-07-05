@@ -8,9 +8,9 @@ bug-reports:      "https://github.com/lindig/jbuild-pp/issues"
 license:          "BSD"
 dev-repo:         "https://github.com/lindig/jbuild-pp.git"
 build: [
- ["jbuilder" "build" "-j" jobs "@install"]
+ ["dune" "build" "-p" name "-j" jobs]
 ]
 depends: [
   "containers"
-  "jbuilder" {build}
+  "dune" {build & >= "1.0"}
 ]

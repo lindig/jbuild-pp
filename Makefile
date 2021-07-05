@@ -1,11 +1,11 @@
 #
-# This Makefile is not called from Opam but only used for 
+# This Makefile is not called from Opam but only used for
 # convenience during development
 #
 
-JB 	= jbuilder
+JB 	= dune
 
-all: 
+all:
 	$(JB) build
 
 install:
