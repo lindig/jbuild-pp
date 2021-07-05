@@ -2,7 +2,10 @@
  (modes byte exe)
  (name main)
  (public_name jbuild-pp)
- (libraries cmdliner containers result))
+ (libraries
+  cmdliner
+  containers
+  result))
 
 (rule
  (alias runtest)
@@ -11,3 +14,4 @@
   dune)
  (action
   (run %{<} dune)))
+
