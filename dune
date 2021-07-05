@@ -1,0 +1,22 @@
+(executable
+  (modes byte exe)
+  (name main)
+  (public_name jbuild-pp)
+  (libraries
+    cmdliner
+    containers
+    result
+  )
+)
+
+(rule
+  (alias runtest)
+  (deps
+    (:< main.exe)
+    dune
+  )
+  (action
+    (run %{<} dune)
+  )
+)
+
